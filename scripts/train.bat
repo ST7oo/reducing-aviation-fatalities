@@ -7,11 +7,11 @@ set RUNTIME_VERSION=1.10
 set PYTHON_VERSION=3.5
 set SCALE_TIER=BASIC
 
-gcloud ml-engine jobs submit training %JOB_NAME% \
-  --job-dir %JOB_DIR% \
-  --package-path %TRAINING_PACKAGE_PATH% \
-  --module-name %MAIN_TRAINER_MODULE% \
-  --region %REGION% \
-  --runtime-version=%RUNTIME_VERSION% \
-  --python-version=%PYTHON_VERSION% \
+gcloud ml-engine jobs submit training %JOB_NAME% ^
+  --job-dir %JOB_DIR% ^
+  --package-path %TRAINING_PACKAGE_PATH% ^
+  --module-name %MAIN_TRAINER_MODULE% ^
+  --region %REGION% ^
+  --runtime-version=%RUNTIME_VERSION% ^
+  --python-version=%PYTHON_VERSION% ^
   --scale-tier %SCALE_TIER%
