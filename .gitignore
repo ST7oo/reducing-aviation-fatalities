@@ -1,3 +1,5 @@
 **/*.ipynb_checkpoints/
 .vscode/
 **/*.pyc
+**/__pycache__/
+**/local-train-output/
