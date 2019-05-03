@@ -12,5 +12,5 @@ gcloud ai-platform jobs submit training %JOB_NAME% ^
     --stream-logs ^
     -- ^
     --input-dir %INPUT_DIR% ^
-    --train-file train.csv ^
-    --num-epochs 50
+    --train-file train2.csv ^
+    --num-epochs 20
